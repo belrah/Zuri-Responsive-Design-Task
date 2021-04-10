@@ -53,6 +53,8 @@ div.hero-content-btn a {
     letter-spacing: 2px;
 }
 
+
+/* 
 div.hero-background {
     background: #f0f0f0;
     padding: 10rem;
@@ -83,6 +85,50 @@ div.background p {
     padding-left: 2rem;
     font-size: 0.8rem;
     letter-spacing: 2px;
+}
+ */
+
+div.hero-background {
+    background: #f0f0f0;
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.background {
+    background: #fff;
+    box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+    padding: 15px 40px;
+    width: 550px;
+    height: 220px;
+    position: relative;
+}
+
+div.background h4 {
+    padding: 2rem;
+    color: #555657;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+div.background p {
+    color: #A6A5AA;
+    padding-left: 2rem;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+div.hero-background-pos {
+    position: absolute;
+    right: 0px;
+    left: 63%;
+    background: #fff;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
 }
 
 div.snapshot-team {
