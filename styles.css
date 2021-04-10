@@ -7,51 +7,7 @@
 }
 
 body {
-    position: relative;
-}
-
-html,
-body {
-    width: 100%;
     overflow-x: hidden;
-}
-
-div.nav-bar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem 6rem;
-    width: 100vw;
-    background: #304353;
-}
-
-div.logo {
-    font-size: 1.5rem;
-    color: #bcc3c7;
-}
-
-ul.nav-links {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-ul li {
-    margin: 0 2vw;
-    list-style: none;
-    font-size: 1.1rem;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #88949B;
-    padding: 0.5vw;
-}
-
-ul li a:hover {
-    color: #304353;
-    background: #fff;
-    padding: 0.5rem;
 }
 
 div.hero-section {
@@ -67,17 +23,17 @@ div.hero-content-heading h3 {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 600;
+    font-weight: 300;
     color: #bcc3c7;
 }
 
 div.hero-content-heading p {
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 0.7rem;
     color: #88949B;
-    font-size: .9rem;
+    font-size: 1rem;
     letter-spacing: 2px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 div.hero-content-btn {
@@ -85,7 +41,6 @@ div.hero-content-btn {
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
-    font-weight: bold;
 }
 
 div.hero-content-btn a {
@@ -97,24 +52,6 @@ div.hero-content-btn a {
     border-radius: 3px;
     letter-spacing: 2px;
 }
-
-
-/* div.hero-background {
-    background: #f0f0f0;
-    padding: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-div.background {
-    background: #fff;
-    box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
-    padding: 15px 40px;
-    width: 550px;
-    height: 220px;
-    position: relative;
-} */
 
 div.hero-background {
     background: #f0f0f0;
@@ -134,9 +71,9 @@ div.background {
 }
 
 div.background h4 {
-    padding: 1rem;
+    padding: 2rem;
     color: #555657;
-    font-size: 2.5rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -144,12 +81,8 @@ div.background h4 {
 div.background p {
     color: #A6A5AA;
     padding-left: 2rem;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     letter-spacing: 2px;
-}
-
-div.circle {
-    border: 1px solid rgb(235, 91, 91);
 }
 
 div.snapshot-team {
@@ -367,150 +300,6 @@ div.footer h6 {
     padding-top: 6rem;
 }
 
-@media only screen and (max-width: 650px) {
-    div.nav-bar {
-        display: grid;
-        justify-content: space-around;
-    }
-    div.logo {
-        font-size: 1rem;
-        font-weight: bold;
-        text-align: left;
-    }
-    div.hero-content-btn {
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    div.nav-bar {
-        padding: 1rem 2rem;
-    }
-    div.hero-section {
-        padding: 5rem 2rem;
-    }
-    div.hero-background {
-        padding: 5rem 2rem;
-    }
-}
-
-
-/* styles for the nav */
-
-.js-nav-open.active {
-    display: none;
-}
-
-.js-nav-close.active {
-    display: block;
-}
-
-.menu-icon {
-    display: none;
-}
-
-@media (max-width: 488px) {
-    .nav-links {
-        position: fixed;
-        top: -9999px;
-        left: 0px;
-        background: #304353;
-        width: 100vw;
-        height: 100vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 9999;
-        transition: top .4s ease-in-out;
-    }
-    .nav-links.active {
-        top: 0px;
-    }
-    .nav-links li a {
-        display: inline-block;
-        margin-bottom: 1em;
-    }
-    .menu-icon {
-        display: block;
-    }
-    .menu-icon,
-    .menu-icon-close {
-        position: relative;
-        z-index: 999999;
-    }
-}
-
-div.background h4 {
-    margin-bottom: .5em;
-    color: #555657;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-div.background p {
-    color: #A6A5AA;
-    font-size: 0.8rem;
-    letter-spacing: 2px;
-    max-width: 33em;
-}
-
-div.background::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: calc(100% - (140px/2));
-    top: 50%;
-    transform: translateY(-50%);
-    background: #fff;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
-}
-
-@media (max-width: 557px) {
-    div.background::after {
-        left: calc(50% - (140px/2));
-        top: 0%;
-    }
-    div.background h4 {
-        margin-top: 4em;
-    }
-}
-
-div.snapshot-team {
-    background: #f0f0f0;
-    text-align: center;
-}
-
-div.snapshot-team h2 {
-    color: #555657;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-div.snapshot-team p {
-    color: #A6A5AA;
-    font-size: .8rem;
-    letter-spacing: 2px;
-    padding-top: 0.6rem;
-}
-
-div.snapshot-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f0f0f0;
-    padding: 4rem 6rem;
-}
-
-div.background p {
-    font-size: .5rem;
-    text-align: left;
-}
-
 @media (max-width: 557px) {
     div.snapshot-box {
         padding: 4rem 2rem;
@@ -550,6 +339,13 @@ div.box3 h5 {
     font-size: 1rem;
 }
 
+div.box1 h5 {
+    text-align: center;
+    padding-top: 2rem;
+    color: #E44C65;
+    font-size: 1rem;
+}
+
 div.circle {
     display: flex;
     margin: 0 auto;
@@ -559,13 +355,6 @@ div.circle {
     background: #bcc3c7;
     margin-top: 2rem;
     border: 1px solid rgb(235, 91, 91);
-}
-
-div.box1 h5 {
-    text-align: center;
-    padding-top: 2rem;
-    color: #E44C65;
-    font-size: 1rem;
 }
 
 div.gallery-section {
@@ -665,7 +454,7 @@ input[type="email"] {
     border-radius: 2px;
 }
 
-::placeholder {
+ ::placeholder {
     color: #A6A5AA;
 }
 
@@ -720,4 +509,51 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+@media (max-width: 557px) {
+    div.background::after {
+        left: calc(50% - (140px/2));
+        top: 0%;
+    }
+    div.background h4 {
+        margin-top: 4em;
+    }
+}
+
+@media (max-width: 768px) {
+    div.hero-section {
+        padding: 5rem 2rem;
+    }
+    div.hero-background {
+        padding: 5rem 2rem;
+    }
+}
+
+div.snapshot-team {
+    background: #f0f0f0;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+div.snapshot-team h2 {
+    color: #555657;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+div.snapshot-team p {
+    color: #A6A5AA;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding-top: 0.8rem;
+}
+
+div.snapshot-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    padding: 4rem 6rem;
 }
